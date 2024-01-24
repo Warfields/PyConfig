@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.9
+    - name: Set up Python 3.11
       uses: actions/setup-python@v2
       with:
-        python-version: 3.9
+        python-version: 3.11
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.6, 3.7, 3.8, 3.9]
+        python-version: [3.11]
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python ${{matrix.python-version}}
@@ -62,7 +62,7 @@ jobs:
     - name: Tests and coverage
       run: |
         coverage erase
-        coverage run --parallel-mode --branch --source=nx_config --omit=**/__init__.py -m unittest discover -v -s tests/
+        coverage run --parallel-mode --branch --source=nx_config_swarfield --omit=**/__init__.py -m unittest discover -v -s tests/
     - name: Upload coverage data
       uses: actions/upload-artifact@v2
       with:
@@ -80,10 +80,10 @@ jobs:
       with:
         name: ${{env.cov_parts_artifact}}
         path: .cov_parts
-    - name: Set up Python 3.9
+    - name: Set up Python 3.11
       uses: actions/setup-python@v2
       with:
-        python-version: 3.9
+        python-version: 3.11
     - name: Combine coverage
       run: |
         python -m pip install --upgrade pip
@@ -91,7 +91,7 @@ jobs:
         coverage combine ${{steps.dl_cov_parts.outputs.download-path}}
     - name: Report coverage
       run: |
-        coverage report --show-missing --precision=1 --fail-under=${{env.min_coverage}}
+        coverage report --show-missing --precision=1 --fail-under=90
     - name: Write coverage JSON
       if: ${{github.event_name == 'push' && always()}}
       run: |
