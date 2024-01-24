@@ -3,7 +3,9 @@ from argparse import ArgumentParser, Action
 from typing import Type, Optional
 
 # noinspection PyProtectedMember
-from nx_config_swarfield._core.generate_template import generate_template as _generate_template
+from nx_config_swarfield._core.generate_template import (
+    generate_template as _generate_template,
+)
 from nx_config_swarfield.config import Config
 from nx_config_swarfield.format import Format
 

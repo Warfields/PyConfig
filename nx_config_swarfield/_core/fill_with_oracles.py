@@ -16,7 +16,11 @@ from nx_config_swarfield._core.section_meta import run_validators
 from nx_config_swarfield._core.type_checks import ConfigTypeInfo
 from nx_config_swarfield._core.unset import Unset
 from nx_config_swarfield.config import Config
-from nx_config_swarfield.exceptions import ValidationError, IncompleteSectionError, ParsingError
+from nx_config_swarfield.exceptions import (
+    ValidationError,
+    IncompleteSectionError,
+    ParsingError,
+)
 from nx_config_swarfield.format import Format
 from nx_config_swarfield.section import ConfigSection
 

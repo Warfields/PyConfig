@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: nx_config_swarfield
-Version: 1.0
+Version: 1.1
 Summary: A convenient way to configure python applications that makes it easy and natural to follow best practices and solves a variety of common issues encountered when using e.g. the 'configparser' library.
 Author: Samuel Warfield
 Author-email: swarfield@cloudflare.com

@@ -20,7 +20,9 @@ from nx_config_swarfield._core.entry_to_text import (
 )
 
 # noinspection PyProtectedMember
-from nx_config_swarfield._core.iteration_utils import get_annotations as _get_annotations
+from nx_config_swarfield._core.iteration_utils import (
+    get_annotations as _get_annotations,
+)
 
 # noinspection PyProtectedMember
 from nx_config_swarfield._core.naming_utils import (
