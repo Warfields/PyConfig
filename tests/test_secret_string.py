@@ -2,10 +2,10 @@ from io import StringIO
 from typing import Optional
 from unittest import TestCase
 
-from nx_config import SecretString, ConfigSection, Config, Format
+from nx_config_swarfield import SecretString, ConfigSection, Config, Format
 
 # noinspection PyProtectedMember
-from nx_config._core.fill_with_oracles import fill_config_w_oracles
+from nx_config_swarfield._core.fill_with_oracles import fill_config_w_oracles
 from tests.typing_test_helpers import collection_type_holders
 
 

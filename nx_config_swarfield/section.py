@@ -11,7 +11,7 @@ else:
     _SectionMappingBase = Mapping[str, Any]
 
 # noinspection PyProtectedMember
-from nx_config._core.entry_to_text import (
+from nx_config_swarfield._core.entry_to_text import (
     entry2text as _entry2text,
     collection_type2masked_str as _col2masked_str,
     value2str as _val2str,
@@ -20,16 +20,16 @@ from nx_config._core.entry_to_text import (
 )
 
 # noinspection PyProtectedMember
-from nx_config._core.iteration_utils import get_annotations as _get_annotations
+from nx_config_swarfield._core.iteration_utils import get_annotations as _get_annotations
 
 # noinspection PyProtectedMember
-from nx_config._core.naming_utils import (
+from nx_config_swarfield._core.naming_utils import (
     internal_name as _internal_name,
     indentation_spaces as _indentation_spaces,
 )
 
 # noinspection PyProtectedMember
-from nx_config._core.section_meta import SectionMeta as _Meta
+from nx_config_swarfield._core.section_meta import SectionMeta as _Meta
 
 
 class ConfigSection(_SectionMappingBase, metaclass=_Meta):
@@ -37,7 +37,7 @@ class ConfigSection(_SectionMappingBase, metaclass=_Meta):
     TODO
     """
 
-    _nx_config_internal__root = True
+    _nx_config_swarfield_internal__root = True
 
     def __init__(self):
         for entry_name in _get_annotations(self):

@@ -1,8 +1,8 @@
 from pathlib import Path
 from typing import Any, Optional, Type, Collection, Callable
 
-from nx_config._core.unset import Unset
-from nx_config.secret_string import SecretString
+from nx_config_swarfield._core.unset import Unset
+from nx_config_swarfield.secret_string import SecretString
 
 _secret_mask = "*****"
 

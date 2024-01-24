@@ -1,7 +1,7 @@
 # noinspection PyProtectedMember
-from nx_config._core.section_meta import run_validators as _run_validators
-from nx_config.exceptions import ValidationError
-from nx_config.section import ConfigSection
+from nx_config_swarfield._core.section_meta import run_validators as _run_validators
+from nx_config_swarfield.exceptions import ValidationError
+from nx_config_swarfield.section import ConfigSection
 
 
 def update_section(section: ConfigSection, **kwargs):

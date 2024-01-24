@@ -2,10 +2,10 @@ from inspect import cleandoc
 from io import StringIO
 from typing import Optional, Mapping
 
-from nx_config import Config, Format
+from nx_config_swarfield import Config, Format
 
 # noinspection PyProtectedMember
-from nx_config._core.fill_with_oracles import fill_config_w_oracles
+from nx_config_swarfield._core.fill_with_oracles import fill_config_w_oracles
 
 
 def fill_from_str(

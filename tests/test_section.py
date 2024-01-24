@@ -3,7 +3,7 @@ from sys import getsizeof
 from typing import Optional
 from unittest import TestCase
 
-from nx_config import ConfigSection, validate
+from nx_config_swarfield import ConfigSection, validate
 
 
 class EmptySection(ConfigSection):

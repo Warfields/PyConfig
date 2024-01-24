@@ -1,5 +1,5 @@
 def internal_name(name: str) -> str:
-    return "_nx_config_internal_" + name
+    return "_nx_config_swarfield_internal_" + name
 
 
 section_validators_attr = internal_name("_validators")

@@ -1,8 +1,8 @@
 from typing import Any
 
-from nx_config._core.type_checks import ConfigTypeInfo
-from nx_config._core.unset import Unset
-from nx_config.secret_string import SecretString
+from nx_config_swarfield._core.type_checks import ConfigTypeInfo
+from nx_config_swarfield._core.unset import Unset
+from nx_config_swarfield.secret_string import SecretString
 
 
 def _check_default_value(value: Any, entry_name: str, type_info: ConfigTypeInfo):

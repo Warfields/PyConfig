@@ -10,7 +10,7 @@ from yaml import YAMLError
 # noinspection PyPackageRequirements
 from yaml.constructor import ConstructorError
 
-from nx_config import (
+from nx_config_swarfield import (
     ConfigSection,
     Config,
     Format,

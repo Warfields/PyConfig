@@ -4,8 +4,8 @@ from typing import Optional
 from unittest import TestCase
 from uuid import UUID
 
-from nx_config import ConfigSection, URL, SecretString, validate, Config
-from nx_config.test_utils import update_section
+from nx_config_swarfield import ConfigSection, URL, SecretString, validate, Config
+from nx_config_swarfield.test_utils import update_section
 from tests.typing_test_helpers import collection_type_holders, CollectionTypeHolder
 
 
@@ -18,7 +18,7 @@ def _get_testing_section_cls(tps: CollectionTypeHolder) -> type:
         birthday: datetime = datetime(
             1955, 11, 5, 1, 22, tzinfo=timezone(offset=timedelta(hours=-3))
         )
-        url: URL = "www.nx_config_db.com"
+        url: URL = "www.nx_config_swarfield_db.com"
         port: int = 1_234
         ultimate_question: Optional[str] = None
         no_collection: Optional[tps.tuple[int, ...]] = None

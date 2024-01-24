@@ -10,15 +10,15 @@ from dateutil.parser import parse as dateutil_parse
 # noinspection PyPackageRequirements
 from yaml import safe_load
 
-from nx_config._core.iteration_utils import get_annotations
-from nx_config._core.naming_utils import internal_name
-from nx_config._core.section_meta import run_validators
-from nx_config._core.type_checks import ConfigTypeInfo
-from nx_config._core.unset import Unset
-from nx_config.config import Config
-from nx_config.exceptions import ValidationError, IncompleteSectionError, ParsingError
-from nx_config.format import Format
-from nx_config.section import ConfigSection
+from nx_config_swarfield._core.iteration_utils import get_annotations
+from nx_config_swarfield._core.naming_utils import internal_name
+from nx_config_swarfield._core.section_meta import run_validators
+from nx_config_swarfield._core.type_checks import ConfigTypeInfo
+from nx_config_swarfield._core.unset import Unset
+from nx_config_swarfield.config import Config
+from nx_config_swarfield.exceptions import ValidationError, IncompleteSectionError, ParsingError
+from nx_config_swarfield.format import Format
+from nx_config_swarfield.section import ConfigSection
 
 _truey_strings = frozenset(
     ("True", "true", "TRUE", "Yes", "yes", "YES", "On", "on", "ON", "1")
@@ -161,7 +161,7 @@ def fill_config_w_oracles(
     elif fmt is None:
         raise ValueError(
             "When filling a config object directly from a TextIO stream you must"
-            " provide a corresponding nx_config.Format through the 'fmt' parameter."
+            " provide a corresponding nx_config_swarfield.Format through the 'fmt' parameter."
         )
     elif fmt == Format.yaml:
         in_map = safe_load(in_stream)

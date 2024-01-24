@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Type, Union, Optional, Tuple, FrozenSet
 from unittest import TestCase
 
-from nx_config import Config, add_cli_options, ConfigSection, SecretString
+from nx_config_swarfield import Config, add_cli_options, ConfigSection, SecretString
 from tests.generate_template_test_helpers import assert_generates_equal
 
 

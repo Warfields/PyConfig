@@ -1,11 +1,11 @@
 # noinspection PyProtectedMember
-from nx_config._core.config_meta import ConfigMeta as _Meta
+from nx_config_swarfield._core.config_meta import ConfigMeta as _Meta
 
 # noinspection PyProtectedMember
-from nx_config._core.iteration_utils import get_annotations as _get_annotations
+from nx_config_swarfield._core.iteration_utils import get_annotations as _get_annotations
 
 # noinspection PyProtectedMember
-from nx_config._core.naming_utils import (
+from nx_config_swarfield._core.naming_utils import (
     internal_name as _internal_name,
     indentation_spaces as _indentation_spaces,
 )
@@ -20,7 +20,7 @@ class Config(metaclass=_Meta):
     TODO
     """
 
-    _nx_config_internal__root = True
+    _nx_config_swarfield_internal__root = True
 
     def __init__(self):
         for section_name, section_type in _get_annotations(self).items():

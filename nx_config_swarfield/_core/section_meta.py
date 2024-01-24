@@ -1,15 +1,15 @@
 from abc import ABCMeta
 from inspect import isroutine, isclass
 
-from nx_config._core.naming_utils import (
+from nx_config_swarfield._core.naming_utils import (
     root_attr,
     internal_name,
     section_validators_attr,
 )
-from nx_config._core.section_entry import SectionEntry
-from nx_config._core.type_checks import ConfigTypeInfo
-from nx_config._core.unset import Unset
-from nx_config._core.validator import Validator
+from nx_config_swarfield._core.section_entry import SectionEntry
+from nx_config_swarfield._core.type_checks import ConfigTypeInfo
+from nx_config_swarfield._core.unset import Unset
+from nx_config_swarfield._core.validator import Validator
 
 _special_section_keys = (
     "__module__",

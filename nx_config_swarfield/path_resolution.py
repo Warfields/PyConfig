@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Optional
 
 # noinspection PyProtectedMember
-from nx_config._core.path_with_oracles import (
+from nx_config_swarfield._core.path_with_oracles import (
     resolve_path_w_oracles as _resolve_path_w_oracles,
 )
 

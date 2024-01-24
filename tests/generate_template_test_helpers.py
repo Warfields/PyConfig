@@ -6,7 +6,7 @@ from sys import stdout
 from typing import Union, Type, Optional
 from unittest import TestCase
 
-from nx_config import Config, add_cli_options
+from nx_config_swarfield import Config, add_cli_options
 
 
 def assert_generates_equal(

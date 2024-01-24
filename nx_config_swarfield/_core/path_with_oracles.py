@@ -2,7 +2,7 @@ from argparse import Namespace
 from pathlib import Path
 from typing import Mapping, Optional
 
-from nx_config.cli import _base_cli_path_option, _check_prefix
+from nx_config_swarfield.cli import _base_cli_path_option, _check_prefix
 
 _base_cli_option = _base_cli_path_option.replace("-", "_")
 _base_env_key = _base_cli_option.upper()

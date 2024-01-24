@@ -4,7 +4,7 @@ from typing import Optional, Any, Union
 from unittest import TestCase, skipIf
 from uuid import UUID
 
-from nx_config import ConfigSection, SecretString, URL
+from nx_config_swarfield import ConfigSection, SecretString, URL
 from tests.typing_test_helpers import collection_type_holders
 
 

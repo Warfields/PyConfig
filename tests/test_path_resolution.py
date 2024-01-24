@@ -2,10 +2,10 @@ from argparse import ArgumentParser
 from pathlib import Path
 from unittest import TestCase
 
-from nx_config import resolve_config_path
+from nx_config_swarfield import resolve_config_path
 
 # noinspection PyProtectedMember
-from nx_config._core.path_with_oracles import resolve_path_w_oracles
+from nx_config_swarfield._core.path_with_oracles import resolve_path_w_oracles
 
 
 class PathResolutionTestCase(TestCase):

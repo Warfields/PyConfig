@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from nx_config import URL
+from nx_config_swarfield import URL
 
 
 class URLTestCase(TestCase):

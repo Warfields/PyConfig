@@ -3,11 +3,11 @@ from pathlib import Path
 from typing import Optional, TextIO, Union
 
 # noinspection PyProtectedMember
-from nx_config._core.fill_with_oracles import (
+from nx_config_swarfield._core.fill_with_oracles import (
     fill_config_w_oracles as _fill_config_w_oracles,
 )
-from nx_config.config import Config
-from nx_config.format import Format
+from nx_config_swarfield.config import Config
+from nx_config_swarfield.format import Format
 
 _supported_yaml_extensions = (".yaml", ".yml", ".YAML", ".YML")
 _supported_ini_extensions = (".ini", ".INI")

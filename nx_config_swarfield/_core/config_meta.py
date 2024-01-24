@@ -1,7 +1,7 @@
 from inspect import isroutine, isclass
 
-from nx_config._core.naming_utils import root_attr, internal_name
-from nx_config.section import ConfigSection
+from nx_config_swarfield._core.naming_utils import root_attr, internal_name
+from nx_config_swarfield.section import ConfigSection
 
 _special_config_keys = (
     "__module__",

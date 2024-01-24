@@ -1,7 +1,7 @@
 from datetime import timedelta
 from unittest import TestCase
 
-from nx_config import Config, ConfigSection
+from nx_config_swarfield import Config, ConfigSection
 
 
 class EmptySection(ConfigSection):

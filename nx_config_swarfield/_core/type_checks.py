@@ -3,9 +3,9 @@ from pathlib import Path
 from typing import Tuple, Union, Optional, Type, Collection, NamedTuple, Any
 from uuid import UUID
 
-from nx_config._core.typing_utils import get_origin, get_args
-from nx_config.secret_string import SecretString
-from nx_config.url import URL
+from nx_config_swarfield._core.typing_utils import get_origin, get_args
+from nx_config_swarfield.secret_string import SecretString
+from nx_config_swarfield.url import URL
 
 _supported_base_types = frozenset(
     (

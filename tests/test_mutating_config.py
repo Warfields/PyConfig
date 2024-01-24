@@ -3,7 +3,7 @@ from typing import Optional
 from unittest import TestCase
 from uuid import UUID
 
-from nx_config import (
+from nx_config_swarfield import (
     Config,
     ConfigSection,
     validate,
@@ -11,7 +11,7 @@ from nx_config import (
     SecretString,
     ValidationError,
 )
-from nx_config.test_utils import update_section
+from nx_config_swarfield.test_utils import update_section
 from tests.typing_test_helpers import collection_type_holders
 
 
@@ -20,10 +20,10 @@ class EmptySection(ConfigSection):
 
 
 class MutableConfigTestCase(TestCase):
-    def test_cannot_be_imported_directly_from_nx_config(self):
+    def test_cannot_be_imported_directly_from_nx_config_swarfield(self):
         with self.assertRaises(ImportError):
             # noinspection PyUnresolvedReferences
-            from nx_config import update_section
+            from nx_config_swarfield import update_section
 
     def test_can_set_entries_with_test_util(self):
         class MySection(ConfigSection):

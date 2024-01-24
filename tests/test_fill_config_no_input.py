@@ -1,7 +1,7 @@
 from io import StringIO
 from unittest import TestCase
 
-from nx_config import (
+from nx_config_swarfield import (
     fill_config,
     Config,
     ConfigSection,

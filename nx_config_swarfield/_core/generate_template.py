@@ -1,9 +1,9 @@
 from typing import Type, TextIO
 
-from nx_config._core.iteration_utils import get_annotations
-from nx_config._core.unset import Unset
-from nx_config.config import Config
-from nx_config.format import Format
+from nx_config_swarfield._core.iteration_utils import get_annotations
+from nx_config_swarfield._core.unset import Unset
+from nx_config_swarfield.config import Config
+from nx_config_swarfield.format import Format
 
 
 def _generate_template_yaml(config_t: Type[Config], out_stream: TextIO):

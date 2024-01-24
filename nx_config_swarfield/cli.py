@@ -3,9 +3,9 @@ from argparse import ArgumentParser, Action
 from typing import Type, Optional
 
 # noinspection PyProtectedMember
-from nx_config._core.generate_template import generate_template as _generate_template
-from nx_config.config import Config
-from nx_config.format import Format
+from nx_config_swarfield._core.generate_template import generate_template as _generate_template
+from nx_config_swarfield.config import Config
+from nx_config_swarfield.format import Format
 
 _base_cli_path_option = "config-path"
 _base_cli_generate_option = "generate-config"

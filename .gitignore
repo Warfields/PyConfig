@@ -6,7 +6,7 @@ dist/
 docs/
 docs_src/_build/
 htmlcov_*/
-nx_config.egg-info/
+nx_config_swarfield.egg-info/
 venv*/
 **/__pycache__/
 .coverage*

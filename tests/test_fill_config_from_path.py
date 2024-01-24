@@ -1,7 +1,7 @@
 from pathlib import Path
 from unittest import TestCase
 
-from nx_config import Config, fill_config_from_path, ConfigSection
+from nx_config_swarfield import Config, fill_config_from_path, ConfigSection
 
 abs_resources_path = Path(__file__).parent / "resources"
 rel_resources_path = abs_resources_path.relative_to(Path.cwd())

@@ -5,7 +5,7 @@ from typing import Optional, Mapping
 from unittest import TestCase
 from uuid import UUID
 
-from nx_config import (
+from nx_config_swarfield import (
     ConfigSection,
     Config,
     Format,

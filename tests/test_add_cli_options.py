@@ -4,7 +4,7 @@ from io import StringIO
 from sys import stderr
 from unittest import TestCase
 
-from nx_config import add_cli_options, Config, ConfigSection
+from nx_config_swarfield import add_cli_options, Config, ConfigSection
 
 format_choices = "{yaml,ini}"
 

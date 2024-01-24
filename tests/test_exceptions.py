@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from nx_config import (
+from nx_config_swarfield import (
     NxConfigError,
     ValidationError,
     IncompleteSectionError,
@@ -9,7 +9,7 @@ from nx_config import (
 
 
 class ExceptionsTestCase(TestCase):
-    def test_validation_error_is_nx_config_error(self):
+    def test_validation_error_is_nx_config_swarfield_error(self):
         with self.assertRaises(NxConfigError):
             raise ValidationError()
 
@@ -17,7 +17,7 @@ class ExceptionsTestCase(TestCase):
         with self.assertRaises(ValueError):
             raise ValidationError()
 
-    def test_incomplete_section_error_is_nx_config_error(self):
+    def test_incomplete_section_error_is_nx_config_swarfield_error(self):
         with self.assertRaises(NxConfigError):
             raise IncompleteSectionError()
 
@@ -25,7 +25,7 @@ class ExceptionsTestCase(TestCase):
         with self.assertRaises(ValueError):
             raise IncompleteSectionError()
 
-    def test_parsing_error_is_nx_config_error(self):
+    def test_parsing_error_is_nx_config_swarfield_error(self):
         with self.assertRaises(NxConfigError):
             raise ParsingError()
 
