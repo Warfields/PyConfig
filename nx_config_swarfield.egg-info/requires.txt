@@ -1,0 +1,17 @@
+python-dateutil<3,>=2.8.2
+pyyaml<7,>=6.0
+
+[coverage]
+coverage<7,>=6.0.2
+
+[docs]
+sphinx<5,>=4.2.0
+python-docs-theme<2022,>=2021.11.1
+
+[format]
+black<23,>=22.3.0
+
+[tests]
+
+[tox]
+tox<4,>=3.24.4
